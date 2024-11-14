@@ -1,0 +1,37 @@
+<h2>Liste des Échanges</h2>
+
+<ul id="exchanges-list">
+    {{#each exchanges}}
+        <li class="exchange-item">
+            <h3>{{this.nom_echange}}</h3>
+            <p>Proposé par : {{this.user_name}} {{this.user_firstname}}</p>
+            <a href="/details/{{this.id}}">Voir les détails</a>
+            <button class="delete-button">Supprimer</button>
+        </li>
+    {{/each}}
+</ul>
+
+<style>
+    #exchanges-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .exchange-item {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .exchange-item h3 {
+        margin: 0 0 5px;
+    }
+
+    .exchange-item p {
+        margin: 0 0 10px;
+        color: #555;
+    }
+</style>
+<script src="/js/lego.js"></script>

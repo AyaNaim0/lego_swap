@@ -1,0 +1,13 @@
+<h2>Détails de l'Échange</h2>
+
+<h3>{{exchange.nom_echange}}</h3>
+<p>Proposé par : {{exchange.user_firstname}} {{exchange.user_name}}</p>
+
+<h4>Briques échangées :</h4>
+<ul>
+    {{#each bricks}}
+        <li>{{this.nom}} - Quantité : {{this.quantite}}, Valeur unitaire : {{this.valeur}}</li>
+    {{/each}}
+</ul>
+
+<p><strong>Valeur totale :</strong> {{totalValue}}</p>

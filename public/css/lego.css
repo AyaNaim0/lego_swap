@@ -1,0 +1,40 @@
+#exchanges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#exchanges-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff4e5;
+}
+
+#exchanges-list h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #c11717cb;
+}
+
+#exchanges-list p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#exchanges-list a {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #a51813;
+    text-decoration: none;
+}
+
+#exchanges-list a:hover {
+    text-decoration: underline;
+}
